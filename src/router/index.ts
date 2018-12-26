@@ -42,7 +42,7 @@ export default new Router({
           },
           {
             path: '/biz2',
-            component: () => import('../view/404.vue'),
+            component: LoginComponent,
             name: 'biz2' ,
             caseSensitive: false
           },
