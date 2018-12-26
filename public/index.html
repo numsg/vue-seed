@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>vue-seed</title>
+  </head>
+  <body>
+    <!-- <noscript>
+      <strong>We're sorry but vue-demo doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript> -->
+    <div id="app-main">
+        <transition name="fade"
+                    mode="out-in">
+          <router-view></router-view>
+        </transition>
+      </div>
+    <!-- built files will be auto injected -->
+  </body>
+  <style lang="scss">
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+        font-size: 14px;
+        -webkit-font-smoothing: antialiased;
+      }
+      #app {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        width: 100%;
+      }
+      .el-submenu [class^=fa] {
+        vertical-align: baseline;
+        margin-right: 10px;
+      }
+      .el-menu-item [class^=fa] {
+        vertical-align: baseline;
+        margin-right: 10px;
+      }
+      .toolbar {
+        background: #f2f2f2;
+        padding: 10px;
+        margin: 10px 0px;
+      }
+      .fade-enter-active,
+      .fade-leave-active {
+        transition: all .2s ease;
+      }
+      .fade-enter,
+      .fade-leave-active {
+        opacity: 0;
+      }
+  </style>
+</html>

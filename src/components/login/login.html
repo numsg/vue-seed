@@ -1,0 +1,23 @@
+<div class="login-body">
+    <div class="loginWarp"
+         v-loading="load_data"
+         element-loading-text="正在登录中..."
+         @keyup.enter="handleLogin">
+      <div class="login-title">
+        <!-- <img src="./images/login_logo.png"/> -->
+      </div>
+      <div class="login-form">
+        <el-form ref="loginForm" :model="form" :rules="rules" label-width="0">
+          <el-form-item prop="username" class="login-item">
+            <el-input v-model="form.username" placeholder="请输入用户名：" class="form-input" :autofocus="true"></el-input>
+          </el-form-item>
+          <el-form-item prop="password" class="login-item">
+            <el-input type="password" v-model="form.password" placeholder="请输入用户密码：" class="form-input"></el-input>
+          </el-form-item>
+          <el-form-item class="login-item">
+            <el-button size="large" icon="check" class="form-submit" @click="handleLogin">login</el-button>
+          </el-form-item>
+        </el-form>
+      </div>
+    </div>
+  </div>

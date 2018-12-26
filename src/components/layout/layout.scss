@@ -1,0 +1,17 @@
+// $color-primary: #20a0ff;//#18c79c
+@import '@/assets/styles/vars.scss';
+
+.container {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  .main{
+    display: flex;
+  // background: #324057;
+    position: absolute;
+    top: 60px;
+    bottom: 0px;
+    overflow: hidden;
+  }
+}

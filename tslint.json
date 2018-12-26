@@ -1,0 +1,12 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+  ],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**"
+    ]
+  },
+  "rules": {
+  }
+}

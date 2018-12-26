@@ -1,0 +1,32 @@
+aside {
+  flex:0 0 230px;
+  width: 230px;
+  // position: absolute;
+  // top: 0px;
+  // bottom: 0px;
+  .el-menu{
+    height: 100%;
+  }
+  .collapsed{
+    width:60px;
+    .item{
+      position: relative;
+    }
+    .submenu{
+      position:absolute;
+      top:0px;
+      left:60px;
+      z-index:99999;
+      height:auto;
+      display:none;
+    }
+  }
+}
+.menu-collapsed{
+  flex:0 0 60px;
+  width: 60px;
+}
+.menu-expanded{
+  flex:0 0 230px;
+  width: 230px;
+}
