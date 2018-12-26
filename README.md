@@ -33,6 +33,7 @@ npm run build
     5. 对于vue一些特性，比如指令使用，component嵌套无影响。
 
 ## 效果
+
 ![](./doc/img/login.png)
 
 ![](./doc/img/biz1.png)
