@@ -40,5 +40,6 @@ npm run build
 
 ## TODO
 
-1. vscode规则检查及vue-cli规则检查？
-2. 单元测试
+1. 解决局部样式问题
+2. vscode规则检查及vue-cli规则检查，editorconfig，tslint
+3. 单元测试
