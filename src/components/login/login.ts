@@ -1,8 +1,10 @@
 import { Vue, Component } from 'vue-property-decorator';
-import './login.scss'
+import loginHtml from './login.html'
+import loginStyle from './login.module.scss'
 
 @Component({
-    template: require('./login.html'),
+    template: loginHtml,//require('./login.html'),
+    style: loginStyle,
     components: {
     }
   })

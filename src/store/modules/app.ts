@@ -1,5 +1,8 @@
 const app = {
   state: {
+    menuStatus:{
+      collapsed: false
+    },
     sidebar: {
       opened: !Number(sessionStorage.getItem('sidebarStatus'))
     },
@@ -7,6 +10,9 @@ const app = {
     configs: {}
   },
   mutations: {
+    MENU_STATUS: (state: any) => {
+      state.menuStatus.collapsed = !state.menuStatus.collapsed;
+    },
     TOGGLE_SIDEBAR: (state: any) => {
       if (state.sidebar.opened) {
         sessionStorage.setItem('sidebarStatus', String(1));
@@ -24,6 +30,9 @@ const app = {
     },
   },
   actions: {
+    MenuStatus: ({ commit }: any) => {
+      commit('MENU_STATUS');
+    },
     ToggleSideBar: ({ commit }: any) => {
       commit('TOGGLE_SIDEBAR');
     },

@@ -2,16 +2,19 @@ import Vue from 'vue';
 import router from './router';
 import store from './store';
 import i18n from './i18n'
-import config from './utils/app-config';
+// import config from './utils/app-config';
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import 'font-awesome/css/font-awesome.min.css'
 
 Vue.config.productionTip = false;
-
 Vue.use(ElementUI);
 
-router.beforeEach( (to, from, next) => {
+import NumsgPluin from './numsg-plugin';
+Vue.use(NumsgPluin);
+
+router.beforeEach( (to: any, from: any, next: any) => {
   if (to.path == '/login') {
     sessionStorage.removeItem('Admin-Token');
   }

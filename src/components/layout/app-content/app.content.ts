@@ -1,8 +1,9 @@
 import { Vue, Component } from 'vue-property-decorator';
-import './app.content.scss'
+import contentStyle from './app.content.module.scss'
 
 @Component({
     template: require('./app.content.html'),
+    style: contentStyle,
     components: {
     }
   })

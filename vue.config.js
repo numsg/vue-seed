@@ -37,6 +37,17 @@ module.exports = {
         loader: 'raw-loader',
       },
     });
+    // config.module.rules[8].oneOf[3].use[0].loader = 'style-loader';
+    // config.module.rules[8].oneOf[3].use[0].options ={
+    // };
+    // config.module.rules[8].oneOf[3].use[1].loader = 'typings-for-css-modules-loader?modules';
+    // config.module.rules[8].oneOf[3].use[1].options ={
+    //   modules: true,
+    //   sourceMap: false,
+    //   importLoaders: 2,
+    //   localIdentName: '[name]__[local]___[hash:base64:5]'
+    // };
+    // console.log(config.module.rules[8].oneOf[3].use[1].options);
     const plugins = [];
     plugins.push(
         new HtmlWebpackPlugin({
@@ -45,7 +56,6 @@ module.exports = {
             favicon: './public/favicon.ico'
           })
       );
-      // console.log(config.module.rules);
       config.plugins = [...config.plugins, ...plugins];
     },
     // 是一个函数，会接收一个基于 webpack-chain 的 ChainableConfig 实例。允许对内部的 webpack 配置进行更细粒度的修改。
@@ -68,7 +78,11 @@ module.exports = {
       // 开启 CSS source maps?
       sourceMap: false,
       // css预设器配置项
-      loaderOptions: {},
+      loaderOptions: {
+        // css: {
+        //   data: `@import "@/assets/styles/helpers/mixin.scss";`
+        // }
+      }
     },
     // webpack-dev-server 相关配置
     devServer: {

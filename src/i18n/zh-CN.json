@@ -1,10 +1,6 @@
 {
-	"language": "切换语言",
-	"languageSucess": "语言切换成功",
-	"Dashboard": {
-		"Welcome": "欢迎-1"
-	},
-	"demo": {
-		"title": "请输入文字"
+	"test": "测试",
+	"layOut": {
+		"loginOut": "退出"
 	}
 }

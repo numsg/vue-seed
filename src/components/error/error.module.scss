@@ -1,0 +1,19 @@
+@import '@/assets/styles/mixin.scss';
+.page-container {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(192, 204, 218);
+}
+
+.button-green {  
+  @include button;  
+  background-color: green;  
+}
+    
+.c____1____error—biz {  
+  background-color: red;  
+}
+
+.c____2____el-collapse-item__wrap {
+  background-color: red;  
+}

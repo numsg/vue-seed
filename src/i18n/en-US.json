@@ -1,7 +1,6 @@
 {
-  "Dashboard": {
-		"Welcome": "Welcome"
-	},
-  "language": "change-language",
-  "languageSucess": "change language success" 
+	"test": "test",
+	"layOut": {
+		"loginOut": "login out"
+	}
 }

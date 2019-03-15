@@ -29,7 +29,7 @@ const messages = {
 };
 
 const i18n = new VueI18n({
-  locale: sessionStorage.getItem('language') || 'en',
+  locale: sessionStorage.getItem('language') || 'zh',
   messages
 });
 // 解决Element-ui组件内的词条

@@ -1,3 +1,6 @@
 {
-
+	"test": "test",
+	"layOut": {
+		"loginOut": "login out"
+	}
 }

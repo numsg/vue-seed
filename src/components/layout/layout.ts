@@ -3,10 +3,11 @@ import { NavbarComponent } from './navbar/navbar'
 import { AppContentComponent } from './app-content/app.content'
 import { AppHeaderComponent } from './app-header/app.header'
 
-import './layout.scss'
+import layoutStyle from './layout.module.scss'
 
 @Component({
     template: require('./layout.html'),
+    style: layoutStyle,
     components: {
       'app-header': AppHeaderComponent,
       'navbar':NavbarComponent,

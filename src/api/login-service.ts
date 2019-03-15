@@ -1,6 +1,3 @@
-// 实际研发使用@gsafety/vue-httpclient包进行http调用
-// import * as httpClient from '@gsafety/vue-httpclient/dist/httpclient';
-
 const loginInfo = {
   username: 'numsg@gsafety.com',
   password: '123456'

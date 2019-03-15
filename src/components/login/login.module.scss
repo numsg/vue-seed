@@ -1,0 +1,48 @@
+.login-body {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  // background-image: url(./images/login_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .loginWarp {
+    width: 300px;
+    padding: 25px 15px;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    .login-title {
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    .login-item {
+      .el-input__inner {
+        margin: 0 !important;
+      }
+    }
+    .form-input {
+      input {
+        margin-bottom: 15px;
+        font-size: 12px;
+        height: 40px;
+        border: 1px solid #eaeaec;
+        background: #eaeaec;
+        border-radius: 5px;
+        color: #555;
+      }
+    }
+    .form-submit {
+      width: 100%;
+      color: #fff;
+      border-color: #6bc5a4;
+      background: #6bc5a4;
+      &:active, &:hover {
+        border-color: #6bc5a4;
+        background: #6bc5a4;
+      }
+    }
+  }
+}

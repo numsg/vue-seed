@@ -1,9 +1,12 @@
 import { Vue, Component } from 'vue-property-decorator';
+import { Getter, Action } from 'vuex-class';
 
-import './app.header.scss'
+// import './app.header.scss'
+import appHeaderStyle from './app.header.module.scss'
 
 @Component({
     template: require('./app.header.html'),
+    style: appHeaderStyle,
     components: {
     }
   })
@@ -12,10 +15,18 @@ export class AppHeaderComponent extends Vue {
   collapsed: boolean =  false;
   sysUserName: any = 'numsg';
 
+  @Getter('menuStatus') menuStatus: any;
+  @Action('MenuStatus') menuStatusAction: any;
+
   sysUserAvatar: any = require('@/assets/img/useravatar.png');
 
-  public collapse(){
-    this.collapsed=!this.collapsed;
+  // public collapse(){
+  //   this.collapsed=!this.collapsed;
+  // }
+
+  public collapse() {
+    this.menuStatusAction();
+    // this.$store.dispatch("MenuStatus");
   }
 
   public logout() {
