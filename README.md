@@ -31,6 +31,14 @@ npm run build
     3. 样式的加载是基于vue常规的一种加载方式，只是我们需要注意样式加载顺序,支持mixin.scss
     4. 对异步加载没有任何影响。component: () => import('../components/biz1').then(({ Biz1Component }) => Biz1Component),
     5. 对于vue一些特性，比如指令使用，component嵌套无影响。
+    
+3. tslint检查规则
+    1. 首先vscode有自己格式化规则
+    2. 使用.editorconfig对文件做基础的规范
+    3. 使用.prettierrc 控制代码格式
+    4. 使用vscode对应的tslint插件，在保存代码后就可以及时对代码进行检查，使用的配置规范文件是tslint.json
+    5. 编译时在脚本中引入tslint检查，再次确保代码无问题，使用的配置规范文件是tslint.json（与4相同）
+
 
 ## 效果
 
