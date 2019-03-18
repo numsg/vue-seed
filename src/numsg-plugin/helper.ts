@@ -66,17 +66,14 @@ function handleStyles(styles: any): any {
         let lastName = p.substr(10, p.length - 10);
         childStyleName = 'c____' + (cInt - 1) + '____' + lastName;
         lastChildStyleName = lastName;
-      } else {
-        childStyleName = null;
-        lastChildStyleName = null;
-      } s
-      objStyles.push({
-        c: c,
-        p: p,
-        styleName: styles[p],
-        childStyleName: childStyleName,
-        lastChildStyleName: lastChildStyleName
-      });
+        objStyles.push({
+          c: c,
+          p: p,
+          styleName: styles[p],
+          childStyleName: childStyleName,
+          lastChildStyleName: lastChildStyleName
+        });
+      }
     }
   }
   return objStyles;
