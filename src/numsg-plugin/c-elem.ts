@@ -31,6 +31,7 @@ export default function c(_this: any): any {
   classs = handleObjectClass(classData['class']);
 
   handleAllClassData(staticClasss, classs, classData, styles);
+  console.log(classData);
   return fn.apply(null, args);
 }
 
@@ -50,6 +51,7 @@ function handleObjectClass(objectClass: any): any {
         classes.push(o);
       }
     }
+    // classes.push('el-menu--horizontal');
   } else {
     classes = [];
   }
@@ -70,9 +72,8 @@ function handleAllClassData(staticClasss: any, classs: any, classData: any, styl
     classArray = classArray.concat(classs);
     classData.staticClass = '';
     for (let i in classArray) {
-      if (classArray[i] === void 0) {
+      if (classArray[i] === void 0)
         continue;
-      }
       let classOne = classArray[i].split(/\s+/g);
       classOne.forEach((className: any) => {
         if (styles[className.trim()]) {

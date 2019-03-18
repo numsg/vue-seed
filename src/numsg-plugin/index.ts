@@ -1,7 +1,7 @@
 import c from './c-elem'
 import { stylesToChildComponet } from './helper'
 
-let NumsgPluin: any = function NumsgPluin() {
+let VueTsCss: any = function VueTsCss() {
   return {
     beforeCreate: function beforeCreate() {
       let _this: any = this;
@@ -23,8 +23,8 @@ let NumsgPluin: any = function NumsgPluin() {
   };
 };
 
-NumsgPluin.install = function (_Vue: any) {
-  _Vue.mixin(NumsgPluin());
+VueTsCss.install = function (_Vue: any) {
+  _Vue.mixin(VueTsCss());
 };
 
-export default NumsgPluin;
+export default VueTsCss;

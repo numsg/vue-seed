@@ -11,8 +11,10 @@ import 'font-awesome/css/font-awesome.min.css'
 Vue.config.productionTip = false;
 Vue.use(ElementUI);
 
-import NumsgPluin from './numsg-plugin';
-Vue.use(NumsgPluin);
+// import VueTsCss from './numsg-plugin';
+// Vue.use(VueTsCss);
+import VueCssTs from 'vue-css-ts';
+Vue.use(VueCssTs);
 
 router.beforeEach( (to: any, from: any, next: any) => {
   if (to.path == '/login') {
