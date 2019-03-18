@@ -45,9 +45,3 @@ npm run build
 ![](./doc/img/login.png)
 
 ![](./doc/img/biz1.png)
-
-## TODO
-
-1. 解决局部样式问题
-2. vscode规则检查及vue-cli规则检查，editorconfig，tslint
-3. 单元测试
