@@ -2,6 +2,7 @@
 node_modules
 /dist
 /1
+/src/numsg-plugin
 
 # local env files
 .env.local
