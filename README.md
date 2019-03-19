@@ -42,6 +42,6 @@ npm run build
 
 ## 效果
 
-![](./doc/img/login.png)
+![](./doc/img/login1.png)
 
-![](./doc/img/biz1.png)
+![](./doc/img/biz.png)
